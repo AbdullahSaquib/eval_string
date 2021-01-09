@@ -89,7 +89,7 @@ class Equation:
         return float(eq_stack[0])
 
 
-def eval_equation(equation, variables):
+def eval_var_equation(equation, variables):
     for var in variables:
         if (type(variables[var]) == float or type(variables[var]) == int):
             equation = equation.replace(var, f"({variables[var]})")
